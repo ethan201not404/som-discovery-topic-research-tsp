@@ -1,3 +1,5 @@
+Ethan
+
 # Spirit of Math - Competitive Contest Coaching Club 2023-2024
 
 ### Discovery Topics Research Project
