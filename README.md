@@ -1,6 +1,6 @@
 # Spirit of Math - Competitive Contest Coaching Club 2023-2024
 
-### Discovery Topics Research Project
+## Discovery Topics Research Project
 
 Throughout this course, students will discover advanced mathematical concepts through
 collaborative research. Students will dive deep into these topics with their group members to
