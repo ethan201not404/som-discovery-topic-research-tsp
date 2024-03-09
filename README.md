@@ -11,7 +11,6 @@ management skills, and research experience.
 
 The outcome of the Discovery Topics will include a LaTeX paper where the students can share
 what they have learned. This might include the following items:
-
 - Introduction
 - History/Background
 - What problem exists that this topic is trying to solve?
