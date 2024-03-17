@@ -1,0 +1,29 @@
+.pokestop-marker {
+  background-color: #3498db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.gym-marker {
+  background-color: #e74c3c;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.pokestop-label {
+  /* background-color: white; */
+  /* border: 1px solid #ccc; */
+  background-color: #3498db;
+  padding: 5px;
+  font-size: 12px;
+}
