@@ -3,7 +3,7 @@ let routeSegments = [];
 let currentSegment = 0;
 let lastPokeStopToSchool;
 
-// Coordinates for your school (Harbord Street and Shaw Street)
+// Coordinates for my school (Harbord Street and Shaw Street)
 const schoolCoord = [43.6571, -79.4211]; // Replace with your school's actual coordinates
 
 // Define coordinates for PokéStops and Gym arranged around Harbord Street and Shaw Street
@@ -14,8 +14,6 @@ const pokestopCoords = [
   // [43.6371, -79.4231], // Replace with actual coordinates
 ];
 
-// Coordinates for Gym
-//const gymCoord = [43.6571, -79.4011]; // Replace with your school's actual coordinates
 
 function calculateDistance(coord1, coord2) {
   const lat1 = coord1[0];
@@ -122,7 +120,7 @@ function createLinesAndDistances(coords) {
       // Display the distance label on the line
       const distanceLabel = L.divIcon({
         className: "distance-label",
-        html: `<span style="color: Crimson; font-size: 16px;">${distance}</span>`,
+        html: `<span style="color: Crimson; font-size: 16px;">${distance} km</span>`,
         iconSize: [30, 10],
         iconAnchor: [25, 0],
       });
@@ -144,22 +142,20 @@ function createMapAndRoute() {
   L.marker(schoolCoord, {
     icon: L.icon({
       iconUrl: "school.png", // Replace with your custom school marker icon URL
-      iconSize: [32, 32], // Adjust icon size as needed
-      iconAnchor: [16, 32], // Adjust icon anchor point as needed
+      iconSize: [32, 32],    // Adjust icon size as needed
+      iconAnchor: [16, 32],  // Adjust icon anchor point as needed
     }),
   }).addTo(map);
 
   // Create custom markers for PokéStops and Gym using your own icons
   pokestopCoords.forEach((coord, index) => {
-    const pokestopLabel = `Point ${index + 2}`; // Labels for PokeStops
     L.marker(coord, {
       icon: L.icon({
         iconUrl: "pokestop.png", // Replace with your custom PokéStop icon URL
-        iconSize: [32, 32], // Adjust icon size as needed
-        iconAnchor: [16, 32], // Adjust icon anchor point as needed
+        iconSize: [32, 32],      // Adjust icon size as needed
+        iconAnchor: [16, 32],    // Adjust icon anchor point as needed
       }),
-    }).addTo(map)
-      .bindTooltip(pokestopLabel, { permanent: true, className: "pokestop-label" });
+    }).addTo(map);
   });
 
   // Create an optimized route using the nearest neighbor approach
@@ -325,14 +321,7 @@ function adjustMapPosition() {
 function initMap() {
   createMapAndRoute();
   const header = document.createElement("h1");
-  // header.textContent = "PokeStop Route Planner";
   document.body.insertBefore(header, document.getElementById("map"));
-
-  const toggleButton = document.createElement("button");
-  toggleButton.textContent = "Show Next Segment";
-  toggleButton.addEventListener("click", toggleNextSegment);
-  document.body.insertBefore(toggleButton, document.getElementById("map"));
-
   const coords = [schoolCoord, ...pokestopCoords];
   const distanceMatrix = createDistanceMatrix(coords);
   displayDistanceMatrix(distanceMatrix, coords);
