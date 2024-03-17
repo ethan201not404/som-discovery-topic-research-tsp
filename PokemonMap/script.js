@@ -3,17 +3,16 @@ let routeSegments = [];
 let currentSegment = 0;
 let lastPokeStopToSchool;
 
-// Coordinates for my school (Harbord Street and Shaw Street)
+// Coordinates for your school (e.g mine is on Harbord Street and Shaw Street)
 const schoolCoord = [43.6571, -79.4211]; // Replace with your school's actual coordinates
 
 // Define coordinates for PokéStops and Gym arranged around Harbord Street and Shaw Street
 const pokestopCoords = [
-  [43.6571, -79.4011], // Replace with your school's actual 
-  [43.6371, -79.4300], // Replace with actual coordinates
+  [43.6571, -79.4011], // Replace with your school's actual
+  [43.6371, -79.43], // Replace with actual coordinates
   [43.6471, -79.4011], // Replace with actual coordinates
   // [43.6371, -79.4231], // Replace with actual coordinates
 ];
-
 
 function calculateDistance(coord1, coord2) {
   const lat1 = coord1[0];
@@ -121,6 +120,7 @@ function createLinesAndDistances(coords) {
       const distanceLabel = L.divIcon({
         className: "distance-label",
         html: `<span style="color: Crimson; font-size: 16px;">${distance} km</span>`,
+        html: `<span style="color: Crimson; font-size: 16px;">${distance} km</span>`,
         iconSize: [30, 10],
         iconAnchor: [25, 0],
       });
@@ -155,6 +155,7 @@ function createMapAndRoute() {
         iconSize: [32, 32],      // Adjust icon size as needed
         iconAnchor: [16, 32],    // Adjust icon anchor point as needed
       }),
+    }).addTo(map);
     }).addTo(map);
   });
 
