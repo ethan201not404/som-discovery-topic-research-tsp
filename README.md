@@ -23,7 +23,7 @@ The presentation should be 10 – 15 minutes in length and include examples for 
 
 Team Group member: Katherine, Joshua, Ethan, Sahil, Kirollos 
 
-General Meeting Satuarday 2PM - 3pm. 2023-2024 Oct 28, Nov 25, Jan 21, Feb 24, Mar 30, Apr 27
+General Meeting Satuarday 2PM - 3pm. 2023-2024 Oct 28, Nov 25, Jan 21, Feb 24, Mar 30, Apr 27 and May 12
 
 ## Group Research Project Topic - The Travelling Salesman Problem
 
