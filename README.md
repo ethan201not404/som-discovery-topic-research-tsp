@@ -33,4 +33,7 @@ My contribution to the group was focused on the __Brute Force Approach__ and wri
 I also prepared a Pokémon Poké Stop map using sample HTML code to effectively demonstrate the problem via the Brute Force Approach. 
 Detailed information is available [here](https://github.com/ethan201not404/som-discovery-topic-research-tsp/tree/main/PokemonMap).
 
+
+[View the full research aper in PDF](SoM_TravellingSalesman.pdf.pdf)
+
 Thank you to Ms. Bonnie McLoughlin for her guidance, and to my entire team for their hard work in making this possible. It has been both a fun and highly educational experience.
