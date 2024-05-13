@@ -34,6 +34,6 @@ I also prepared a Pokémon Poké Stop map using sample HTML code to effectively 
 Detailed information is available [here](https://github.com/ethan201not404/som-discovery-topic-research-tsp/tree/main/PokemonMap).
 
 
-[View the full research aper in PDF](SoM_TravellingSalesman.pdf.pdf)
+[View the full research paper in PDF](SoM_TravellingSalesman.pdf)
 
 Thank you to Ms. Bonnie McLoughlin for her guidance, and to my entire team for their hard work in making this possible. It has been both a fun and highly educational experience.
